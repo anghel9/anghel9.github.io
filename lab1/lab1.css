@@ -1,0 +1,135 @@
+h1{
+    margin:0px;
+    text-align: center;
+    color: white;
+    background-color: bisque;
+}
+
+h2{
+    text-align: center;
+    margin-right: 25%
+}
+
+ul{
+    display: table;
+    margin:auto;
+    text-align: left;
+}
+
+table{
+        border-collapse: collapse;
+        margin: 2em auto;
+        border: 3px solid black;
+    
+}
+
+td{
+    border: solid black;
+    padding: .6rem 1rem;
+    text-align: center;
+}
+
+
+th{
+    border: solid black;
+    padding: .6rem 1rem;
+    text-align: center;
+    background: mintcream;
+}
+
+.teamFlex{
+    /* width: 100%;
+    height: 300px; */
+    display:flex; 
+    justify-content:center;
+
+}
+.image{
+    border: 5px solid black;
+    border-radius:25px;
+}
+figure{
+    text-align: center; 
+    width:40%;
+}
+
+img{
+    width:75%;
+    height:auto;
+}
+
+p{
+    text-align: center;
+}
+
+body{
+    background-color: antiquewhite;
+}
+#navBar{
+     background-color: navy;
+     text-align: center;
+}
+
+#footImg{
+    width:10em;
+    height:10em;
+    
+}
+
+.navButton{
+    /* background-color: rgba(175, 165, 165, 0.912);
+    color: solid rgb(0, 0, 0);
+    border: collapse; */
+    display:inline-block;
+    padding:.4rem .9rem;
+    border:2px solid black;
+    border-radius:.35rem;
+    background:white;
+    color:black; 
+}
+
+.indexMessage{
+font-size: 1.2em;
+color: #3b8ed2;
+text-align: center;
+}
+
+.navButton:hover{
+    transform: translateY(-1px);
+}
+
+.navButton.active{
+    outline: 3px solid white;
+}
+
+footer{
+    background-color: white;    
+    color: grey;
+    text-align: center;
+    font-size: 0.8em;
+
+}
+
+.asimovian-regular {
+  font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#contactForm{
+    display:flex; 
+    justify-content:center;
+    padding: 1rem 0;
+    
+}
+
+
+#contactForm iframe{
+  width: 820px;
+  height: 700px;          
+  border: 0; 
+}
+
+a:hover{
+    border:1px solid white;
+}
