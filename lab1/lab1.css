@@ -1,13 +1,13 @@
 h1{
     margin:0px;
     text-align: center;
-    color: white;
+    color: black;
     background-color: bisque;
 }
 
 h2{
     text-align: center;
-    margin-right: 25%
+    margin-right: 15%
 }
 
 ul{
@@ -38,11 +38,10 @@ th{
 }
 
 .teamFlex{
-    /* width: 100%;
-    height: 300px; */
     display:flex; 
     justify-content:center;
-
+    margin:1em auto;
+    
 }
 .image{
     border: 5px solid black;
@@ -50,11 +49,11 @@ th{
 }
 figure{
     text-align: center; 
-    width:40%;
+    width:45%;
 }
 
 img{
-    width:75%;
+    width:90%;
     height:auto;
 }
 
@@ -68,27 +67,30 @@ body{
 #navBar{
      background-color: navy;
      text-align: center;
+     height:3.8em;
+     padding-top: 1em;
+     
 }
 
 #footImg{
-    width:10em;
-    height:10em;
+    width:7em;
+    height:7em;
     
 }
 
 .navButton{
-    /* background-color: rgba(175, 165, 165, 0.912);
-    color: solid rgb(0, 0, 0);
-    border: collapse; */
     display:inline-block;
-    padding:.4rem .9rem;
+    font-size: 1.5em;
+    padding:.5rem .9rem;
     border:2px solid black;
     border-radius:.35rem;
     background:white;
     color:black; 
+    margin: auto 1em;
+    
 }
 
-.indexMessage{
+.indexMsg{
 font-size: 1.2em;
 color: #3b8ed2;
 text-align: center;
@@ -99,7 +101,7 @@ text-align: center;
 }
 
 .navButton.active{
-    outline: 3px solid white;
+    outline: 3px solid antiquewhite;
 }
 
 footer{
@@ -130,6 +132,6 @@ footer{
   border: 0; 
 }
 
-a:hover{
-    border:1px solid white;
+a:hover, img:hover{
+    border:3px solid white;
 }
