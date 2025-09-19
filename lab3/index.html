@@ -4,24 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 3 JS Quiz</title>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
 </head>
 <body>
     <h1>CSS Quiz</h1>
-    <div>1. What CSS property changes the text color?
+    <div>1. What CSS property changes the text color?</div>
+    <div id="q1Options"></div>
+    <br><hr>
+
+    <div>2. What is HTML tag allows you to make a flex box
         <br>
         <label>
-            <input type="radio" name="q1" value="Text-Color"> Text-Color
+            <input type="text" id="q2" placeholder="Exclude the brackets">
         </label>
+       
+    </div>
+    <br><hr>
+
+    <div>3.Where should you normally place the script tag in your html file?<br>
         <label>
-            <input type="radio" name="q1" value="Font-Color"> Font-Color
-        </label>
-        <label>
-            <input type="radio" name="q1" value="Color"> Color
+            <select id="q3">
+                <option value="w">in the end of the head tag</option>
+                <option value="r">in the end of the body tag</option>
+                <option value="w">in the end of the footer tag</option>
+            </select>
         </label>
     </div>
-    <br>
+    <br><hr>
+
+    <div>4.How many questions are on this quiz?<br>
+        <label>
+            <input type="number" id="q4" min="1" max="10" step="1" placeholder="1-10">
+        </label>
+    </div>
+    <br><hr>
 
     <button id="submitBtn">Submit Quiz</button>
+    <br><hr>
+    <div id="Feedback">
+        Feedback 
+        <br>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
