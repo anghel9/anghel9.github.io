@@ -7,7 +7,7 @@ div{
     display: flex;
 }
 body{
-    background-color: rgb(45, 111, 168);
+    background-color: antiquewhite;
     text-align: center;
 }
 #guessBox{
@@ -20,8 +20,8 @@ h1{
 }
 button{
     border-radius: 5px;
-    border-color: blueviolet;
-    background-color: aquamarine;
+    border-color: black;
+    background-color: rgb(10, 239, 64);
     border: 5px ridge;
 
 }

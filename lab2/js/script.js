@@ -1,39 +1,43 @@
 document.querySelector("#guessBtn").addEventListener("click", guess);
 let correctGuess = Math.floor(Math.random()*99+1);
 let numofguess = 7;
+let gameOver = false;
 
 function guess(){
-    
+    if (gameOver){
+        return;
+    }
     let userGuess = document.querySelector("#guessBox").value;
-    //alert(userGuess);
     document.querySelector("#answers").textContent += `${userGuess} `;
-    if(numofguess > 0){
-        if(userGuess>=100){
-            alert("too big a guess");
-        } 
-        if (userGuess<=0){
-            alert("too small a guess");
-        }
-        if (userGuess == correctGuess){
-            document.querySelector("#yourGuess").textContent = "Congrats, your guess was correct";
-            document.querySelector("#yourGuess").style.color = "#39FF14"
-        }
-        if(userGuess > correctGuess){
-            document.querySelector("#yourGuess").textContent = "Your guess was too high";
-            document.querySelector("#yourGuess").style.color = "yellow"
-        }
-        if(userGuess < correctGuess){
-            document.querySelector("#yourGuess").textContent = "Your guess was too low";
-            document.querySelector("#yourGuess").style.color = "yellow"
-        }
+
+    checkGuess();
+    numofguess--;
+
+    if (userGuess == correctGuess){
+        document.querySelector("#yourGuess").textContent = "Congrats, your guess was correct!";
+        document.querySelector("#yourGuess").style.color = "#158d00ff";
+        gameOver = true;
+        return;
     }
     if(numofguess <= 0){
-       document.querySelector("#yourGuess").textContent = "You lose"
-       document.querySelector("#yourGuess").style.color = "red"
-       if(userGuess == correctGuess){
-            document.querySelector("#yourGuess").textContent = "Correct you still lost";
-            document.querySelector("#yourGuess").style.color = "red"
-       }
+        document.querySelector("#yourGuess").textContent = `You lose! The number was ${correctGuess}`;
+        document.querySelector("#yourGuess").style.color = "red";
+        gameOver = true;
+        return;
     }
-    numofguess--;
+    if(userGuess > correctGuess){
+        document.querySelector("#yourGuess").textContent = `Too high! ${numofguess} guesses left`;
+        document.querySelector("#yourGuess").style.color = "purple";
+    } else {
+        document.querySelector("#yourGuess").textContent = `Too low! ${numofguess} guesses left`;
+        document.querySelector("#yourGuess").style.color = "blue";
+    }
+}
+function checkGuess(){
+    let guess = document.querySelector("#guessBox").value;
+    console.log("player guess: "+ guess);
+    if( guess < 1 || guess > 99){
+        alert("guess out of range 1-99");
+        return;
+    }
 }
