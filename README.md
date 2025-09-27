@@ -7,3 +7,4 @@
 - [Lab 1](./lab1/index.html)
 - [Lab 2](./lab2.1/index.html)
 - [Lab 3](./lab3/index.html)
+- [Lab 4](./lab4/index.html)
