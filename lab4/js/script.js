@@ -67,7 +67,10 @@ async function displayCity(){
 
 async function displayCounty(){
     let state = document.querySelector("#state").value;
-    console.log(state)
+    
+    let countySelect = document.querySelector("#county");
+    countySelect.innerHTML = '<option>(Select)</option>';
+
     let url = "https://csumb.space/api/countyListAPI.php?state="+state;
     try{
         let response = await fetch(url);
