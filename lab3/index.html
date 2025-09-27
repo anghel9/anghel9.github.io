@@ -9,33 +9,52 @@
 </head>
 <body>
     <h1>CSS Quiz</h1>
-    <div>1. What CSS property changes the text color?</div>
+    <p>Total times taken: <span id="quizCount">0</span></p>
+    <hr>
+    <div><span id="q1img"></span>1. What CSS property changes the text color?</div>
     <div id="q1Options"></div>
     <br><hr>
 
-    <div>2. What is HTML tag allows you to make a flex box
+    <div><span id="q2img"></span>2. Which HTML tag allows you to make a flex box?
         <br>
         <label>
-            <input type="text" id="q2" placeholder="Exclude the brackets">
+            <input type="text" id="q2" placeholder="One word">
         </label>
        
     </div>
     <br><hr>
 
-    <div>3.Where should you normally place the script tag in your html file?<br>
+    <div><span id="q3img"></span>3.Where should you normally place the script tag in your html file?<br>
         <label>
             <select id="q3">
-                <option value="w">in the end of the head tag</option>
-                <option value="r">in the end of the body tag</option>
-                <option value="w">in the end of the footer tag</option>
+                <option value="w">(Select)</option>
+                <option value="w">at the end of the head tag</option>
+                <option value="r">at the end of the body tag</option>
+                <option value="w">at the end of the footer tag</option>
             </select>
         </label>
     </div>
     <br><hr>
 
-    <div>4.How many questions are on this quiz?<br>
+    <div><span id="q4img"></span>4.How many elements do you need to link a JS and CSS file to the index.html?<br>
         <label>
             <input type="number" id="q4" min="1" max="10" step="1" placeholder="1-10">
+        </label>
+    </div>
+    <br><hr>
+
+    <div><span id="q5img"></span>5. Which of the following are valid CSS units? (Select all that apply)<br>
+        <label>
+            <input type="checkbox" name="q5" value="px"> px
+        </label><br>
+        <label>
+            <input type="checkbox" name="q5" value="em"> em
+        </label><br>
+        <label>
+            <input type="checkbox" name="q5" value="per"> %
+        </label><br>
+        <label>
+            <input type="checkbox" name="q5" value="invalid"> per
         </label>
     </div>
     <br><hr>
@@ -43,11 +62,13 @@
     <button id="submitBtn">Submit Quiz</button>
     <br><hr>
     <div id="Feedback">
-        <p>Feedback:</p>
+        <p><span id="Feedimg"></span>Feedback:</p>
+        <p id="Grade">Grade: </p>
         <p id="Feedback1"></p>
         <p id="Feedback2"></p>
         <p id="Feedback3"></p>
         <p id="Feedback4"></p>
+        <p id="Feedback5"></p>
     </div>
 
     <script src="js/script.js"></script>
