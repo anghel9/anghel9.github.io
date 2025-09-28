@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    background: bisque;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.bet-section {
+    background: white;
+    margin: auto;
+}
+
+#betAmount {
+    padding: 10px;
+    font-size: 1.2em;
+    width: 80px;
+}
+
+#spinBtn {
+    background: green;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#spinBtn:hover {
+    background: darkgreen;
+}
+
+#slotMachine {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.reel {
+    background: white;
+    border: 4px dotted antiquewhite;
+    padding: 10px;
+}
+
+.reel img {
+    width: 80px;
+    height: 80px;
+}
+
+#result {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#balance {
+    font-size: 1.3em;
+    color: white;
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    margin: auto;
+    max-width: 200px;
+}
