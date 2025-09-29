@@ -1,11 +1,29 @@
 let balance = 100;
 const symbols = ['cherry.png', 'bar.png', 'fist.png'];
 document.querySelector('#spinBtn').addEventListener('click', spin);
+document.querySelector('#title').addEventListener('click', thief);
+
+function thief() {
+    balance -= 10;
+    updateBalance();
+    
+    document.querySelector('#reel1').src = 'img/thief.png';
+    document.querySelector('#reel2').src = 'img/thief.png';
+    document.querySelector('#reel3').src = 'img/thief.png';
+    document.querySelector('#result').textContent = 'Dont hit the machine! Thief (Tax Man) stole $10!';
+    
+    if (balance <= 0) {
+        alert('Game Over! Starting fresh with $100');
+        balance = 100;
+        updateBalance();
+    }
+}
+
 function spin() {
     const betAmount = parseInt(document.querySelector('#betAmount').value);
     
     if (betAmount > balance) {
-        alert('Not enough money! Womp Womp');
+        alert('Not enough money! Womp womp, bet range $1-500');
         return;
     }
 
