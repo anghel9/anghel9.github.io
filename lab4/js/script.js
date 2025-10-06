@@ -14,7 +14,7 @@ function checkUser2(){
     document.querySelector("#userSpan").textContent = "";
     
     if(user.length < 3){
-        document.querySelector("#userSpan").textContent = "Username must be at least 3 characters";
+        document.querySelector("#userSpan").textContent = "Must be at least 3 characters";
         document.querySelector("#userSpan").style.color = "red";
         return;
     } else {
@@ -41,7 +41,7 @@ function checkPass2(){
     let password2 = document.querySelector("#password2").value;
     let updateSpan2 = document.querySelector("#passwordSpan2");
     
-    if(password !== password2){
+    if(password.length < 6 || password !== password2){
         updateSpan2.textContent = "Not a match, retype password";
         updateSpan2.style.color = "red";
     } else {

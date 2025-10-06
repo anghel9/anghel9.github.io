@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    background-color: navy;
+    color:aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+input[type="text"], input[type="password"], select {
+    padding: 9px;
+    border: 2px solid darkgray;
+    font-size: 1em;
+    margin: 10px;
+}
+
+
+button {
+    background-color: darkgreen;
+    color: antiquewhite;
+    padding: 12px 24px;
+    border: double;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: green;
+}
+
+span {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
